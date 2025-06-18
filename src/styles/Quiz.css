@@ -1,6 +1,10 @@
-.header{
-    display: flex;
-    justify-content: center;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 .section{
@@ -13,6 +17,7 @@
     flex-direction: column;
     padding: 20px;
     gap: 5px;
+    width: 600px;
 }
 
 .input-section{
@@ -46,6 +51,8 @@
     padding: 10px;
     min-height: 400px;
     gap: 5px;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .section1{
@@ -58,6 +65,7 @@
     flex-direction: column;
     padding: 20px;
     gap: 5px;
+    width: 600px;
 }
 
 .chat-bubble {
@@ -77,4 +85,18 @@
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
+}
+
+
+.chat-bubble.server {  
+  background-color: #f1f0f0;
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 0;
+}
+
+.chat-bubble.me {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+  text-align: right;
 }
